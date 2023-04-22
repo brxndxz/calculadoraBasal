@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Calculadora de Hidrataci&oacute;n</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js" defer></script>
+    </header>
+    <body>
+        <div id="contenedor">
+            <div id="calculadora">
+                <div class="contenido">
+                    <h1>Hidrataci&oacute;n Basal</h1>
+                    <p class="item">Completa todos los datos</p>
+                    <input class="item" id="peso" type="number" placeholder="Peso en kilogramos"/>
+                    <p class="item" id="error">* Debe completar todos los datos</p>
+                    <button class="item" id="error">Calcular</button>
+                    <p class="item resultado" id="flu">71cc/h</p>
+                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+                </div>
+            </div>
+            <div id="detalle">
+                <div class="contenido">
+                    <h1>¿C&oacute;mo se  calcula?</h1>
+                    <ul>
+                        <li>De 0kg. a 10 kg. se calcla 100cc por cada kilogramo</li>
+                        <li>Se suman 50cc por cada kilogramo de peso por arriba de 10kg. hasta 20 kg.</li>
+                        <li>De 20 kg. para arriba, se suman 20cc por kg. adicional</li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </body>
+</html>
+
