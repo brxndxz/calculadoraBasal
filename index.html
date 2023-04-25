@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <title>Calculadora de Hidrataci&oacute;n</title>
         <link rel="stylesheet" href="style.css"/>
-        <script src="script.js" defer></script>
-    </header>
+        <script src="./script.js" defer></script>
+    </head>
     <body>
         <div id="contenedor">
             <div id="calculadora">
                 <div class="contenido">
                     <h1>Hidrataci&oacute;n Basal</h1>
                     <p class="item">Completa todos los datos</p>
-                    <input class="item" id="peso" type="number" placeholder="Peso en kilogramos"/>
+                    <input class="item" id="peso" min="0" max="120" type="number" placeholder="Peso en kilogramos"/>
+                    <button class="item" id="calcular">Calcular</button>
                     <p class="item" id="error">* Debe completar todos los datos</p>
-                    <button class="item" id="error">Calcular</button>
                     <p class="item resultado" id="flu">71cc/h</p>
                     <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
                 </div>

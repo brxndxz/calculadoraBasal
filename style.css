@@ -8,7 +8,6 @@ body{
     width: 900px;
     height: 500px;
     text-align: center;
-    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
     position: absolute;
     inset: 0;
     margin: auto;
@@ -20,15 +19,13 @@ body{
 
 #calculadora{
     background: white;
-    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
     float: left;
 }
 
 #detalle{
-    background: #FF416C;
-    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    background: #c779f5;
     width: 50%;
     height: 100%;
     float: left;
@@ -36,7 +33,6 @@ body{
 }
 
 .contenido{
-    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -48,16 +44,33 @@ input {
 	width: 70%;
     padding: 12px 15px;
     border: none;
-    background-color: #eee;
+    background-color: #f0f0f09f;
+    margin-bottom: 20px;
 }
-
 button {
-  font-size: 15px;
+    font-size: 15px;
 	font-weight: bold;
 	padding: 12px 45px;
 	border-radius: 30px;
-	background-color: #FF416C;
-	border: 1px solid #FF416C;
+	background-color: #c779f5;
+	border: 1px solid #c779f5;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: transform 20ms ease-in;
+  }
+button:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px #c779f5;
+    transition: all 0.2s ease;
+  }
+/*button {
+    font-size: 15px;
+	font-weight: bold;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: #c779f5;
+	border: 1px solid #c779f5;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -66,7 +79,7 @@ button {
 
 button:active {
 	transform: scale(0.95);
-}
+}*/
 
 #error{
     color: red;
